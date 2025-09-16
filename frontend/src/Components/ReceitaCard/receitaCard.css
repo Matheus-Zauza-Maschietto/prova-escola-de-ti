@@ -1,18 +1,52 @@
-.card-field {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 200px;
+.card {
+    min-height: 250px;
     width: 300px;
-    background-color: darkslategrey;
-    color: white;
+    background-color: rgb(68, 19, 19);
+    color: whitesmoke;
     border-radius: 3px;
+    margin: 15px;
 }
 
-
 .card-title {
-    font-size: 18px; 
-    border-bottom: 2px white solid;
+    height: 40px; 
+    border-bottom: 2px white solid; 
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title > h2 {
+    font-size: 18px; 
+    text-align: center;
+}
+
+.card-description {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px white solid; 
+}
+
+.card-description > h3, .card-content > h3 {
+    font-size: 16px; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-content {
+    padding: 10px;
+    width: 100%;
+}
+
+.save-button {
+    height: 30px;
+    margin: 10px;
+    background-color: green;
+    color: whitesmoke;
+    outline: none;
+    border-radius: 6px;
+    border: none;
 }

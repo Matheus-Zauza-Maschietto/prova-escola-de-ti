@@ -1,0 +1,47 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-field > input {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+
+.form-button {
+    width: 250px;
+    height: 40px;
+    margin: 10px;
+    background-color: green;
+    color: whitesmoke;
+    outline: none;
+    border-radius: 6px;
+    border: none;
+}
+
+
+.recipes {
+    width: 100%;
+}
+
+.recipes > ul {
+    display: flex;  
+    justify-content: space-around;
+    align-items: start;
+}
+
+li {
+    list-style: none;
+}
