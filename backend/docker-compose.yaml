@@ -1,0 +1,27 @@
+services:
+  db:
+    container_name: "receitas-postgres"
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=TaskManager
+      - POSTGRES_PASSWORD=Senha123!
+    networks:
+      - "taskmanager"
+  # app:
+  #   depends_on: 
+  #     - db
+  #   container_name: "taskmanagerAPI"
+  #   build: ./dockerfile
+  #   image: "./"
+  #   ports:
+  #     - 5090:5090
+  #   networks:
+  #     - "taskmanager"
+
+networks:
+  taskmanager:
+    driver:  bridge
+volumes:
+ db_volume:
