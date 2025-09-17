@@ -19,13 +19,13 @@ public class AppDbContext : DbContext
         builder.Entity<Ingrediente>()
                 .HasOne(e => e.Receita)
                 .WithMany(e => e.Ingredientes)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.NoAction);
 
         builder.Entity<Receita>()
                 .HasMany(e => e.Ingredientes)
                 .WithOne(e => e.Receita)
                 .HasForeignKey(e => e.ReceitaId)
-                .OnDelete(DeleteBehavior.NoAction);
+                .OnDelete(DeleteBehavior.Cascade);
     }
 
 }

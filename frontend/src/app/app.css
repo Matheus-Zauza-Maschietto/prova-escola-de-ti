@@ -37,7 +37,8 @@ form {
 }
 
 .recipes > ul {
-    display: flex;  
+    display: flex;
+    flex-wrap: wrap;  
     justify-content: space-around;
     align-items: start;
 }

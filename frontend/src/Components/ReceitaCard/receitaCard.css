@@ -16,9 +16,15 @@
     align-items: center;
 }
 
-.card-title > h2 {
+.card-title > .h2 {
     font-size: 18px; 
     text-align: center;
+}
+
+input {
+    background-color: rgb(68, 19, 19);
+    color: whitesmoke;
+    border: none;
 }
 
 .card-description {
@@ -49,4 +55,11 @@
     outline: none;
     border-radius: 6px;
     border: none;
+}
+
+.card-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
